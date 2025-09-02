@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="main-title">API Playground</h1>
+  
+  <div class="grid-container">
+    <!-- Dog -->
+    <div class="grid-item">
+      <h2>Random Dog</h2>
+      <button onclick="getDog()">Fetch Dog</button>
+      <div class="output" id="dogOutput"></div>
+    </div>
+
+    <!-- Cat -->
+    <div class="grid-item">
+      <h2>Random Cat</h2>
+      <button onclick="getCat()">Fetch Cat</button>
+      <div class="output" id="catOutput"></div>
+    </div>
+
+    <!-- Weather -->
+    <div class="grid-item">
+      <h2>Weather</h2>
+      <input type="text" id="weatherCity" placeholder="Enter city">
+      <button onclick="getWeather()">Get Weather</button>
+      <div class="output" id="weatherOutput"></div>
+    </div>
+
+    <!-- Currency -->
+    <div class="grid-item">
+      <h2>Currency Converter</h2>
+      <input type="number" id="amount" placeholder="Amount">
+      <input type="text" id="fromCurrency" placeholder="From (e.g. USD)">
+      <input type="text" id="toCurrency" placeholder="To (e.g. EUR)">
+      <button onclick="getCurrency()">Convert</button>
+      <div class="output" id="currencyOutput"></div>
+    </div>
+
+    <!-- GitHub -->
+    <div class="grid-item">
+      <h2>GitHub User</h2>
+      <input type="text" id="githubUser" placeholder="Enter username">
+      <button onclick="getGitHub()">Fetch User</button>
+      <div class="output" id="githubOutput"></div>
+    </div>
+
+    <!-- Jokes -->
+    <div class="grid-item">
+      <h2>Chuck Norris Joke</h2>
+      <button onclick="getJoke()">Tell Me a Joke</button>
+      <div class="output" id="jokeOutput"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
